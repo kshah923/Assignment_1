@@ -1,7 +1,6 @@
 # Kevin Shah
 # February 8, 2021
 # Assignment_1
-# test
 
 import numpy as np
 import matplotlib.pyplot as plot
