@@ -3,14 +3,22 @@
 # Assignment_1
 
 import numpy as np
-import matplotlib.pyplot as plot
+import matplotlib.pyplot as plt
 
-time = np.arange(0, 10, 0.1)
-amplitude = np.sin(time)
-plot.plot(time, amplitude)
-plot.title('Sine wave')
-plot.xlabel('Time')
-plot.ylabel('Amplitude = sin(time)')
-plot.grid(True, which='both')
-plot.axhline(y=0, color='k')
-plot.show()
+# 1 Period of Sine and Cosine Functions
+time = np.arange(0, 2*np.pi, 0.1)
+sin = np.sin(time)
+cos = np.cos(time)
+# tan = np.tan(time)
+plt.plot(time, sin, time, cos)
+# plt.plot(time, sin, time, cos, time, tan)
+
+# title, legend, color_coding,
+plt.title('Trig Graphs')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+plt.axhline(linewidth=1, color='black')
+plt.legend(['sin(x)', 'cos(x)'])
+# plt.legend(['sin(x)', 'cos(x)', 'tan(x)'])
+# plt.ylim([-1.5, 1.5])
+plt.show()
