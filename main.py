@@ -9,12 +9,15 @@ import matplotlib.pyplot as plt
 time = np.arange(0, 2*np.pi, 0.1)
 sin = np.sin(time)
 cos = np.cos(time)
-plt.plot(time, sin, time, cos)
+tan = np.tan(time)
+plt.plot(time, sin, time, cos, time, tan)
+
 
 # title, legend, color_coding
 plt.title('Trig Graphs')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
 plt.axhline(linewidth=1, color='black')
-plt.legend(['sin(x)', 'cos(x)'])
+plt.legend(['sin(x)', 'cos(x)', 'tan(x)'])
+plt.ylim(-1.5,1.5)
 plt.show()
